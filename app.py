@@ -67,7 +67,6 @@ def recommend_museum():
             'Description': df.iloc[i]['Description'],
             'Similarity_Score': similarities[i]
         })
-
     return jsonify(results)
 
 # Route to fetch all places in the dataset
@@ -108,7 +107,6 @@ def calculate_distance():
             'Lat': row['Lat'],
             'Long': row['Long']
         })
-
     return jsonify(results)
 
 # Run the app with Gunicorn or locally for testing
